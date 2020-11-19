@@ -1,3 +1,13 @@
+// units included for use in GraphX
+class UNITS {
+        constructor() {
+                this.percent = '%'
+                this.pixel = 'px'
+        }
+}
+const Units = new UNITS()
+
+// main methods
 class GraphX {
 	constructor() {
 		this.loaderInterval = 300
@@ -18,8 +28,8 @@ class GraphX {
 	displayInterface(element, time) {
 		setTimeout(function(){document.getElementById(element).style.display = "inline-block"}, time * 1000)
 	}
-	setWidth(element, size) {
-		document.getElementById(element).style.width = size + 'px'
+	setWidth(element, size, unit) {
+		document.getElementById(element).style.width = size + unit
 	}
 	setCenterLeft(element) {
 		document.getElementById(element).style.marginLeft = 'calc(100vw / 2)'
@@ -34,8 +44,8 @@ class GraphX {
 		document.getElementById(element).style.marginLeft = 'calc(100vw / 2)'
 		document.getElementById(element).style.marginTop = 'calc(100vh / 2)'
 	}
-	setHeight(element, size) {
-		document.getElementById(element).style.height = size + 'px'
+	setHeight(element, size, unit) {
+		document.getElementById(element).style.height = size + unit
 	}
 	setTransform(element, transform) {
 		document.getElementById(element).style.transform = transform
