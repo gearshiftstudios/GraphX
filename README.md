@@ -24,5 +24,9 @@ Here is an example of how you could use the GraphX library.
 **JavaScript**
 
 ```javascript
+// changes color of text.
 graphx.setColor('my-text', 'white')
+// removes text from display (similar to 'display:none' in CSS) and how it should display before being removed.
+// the unit for time is seconds, not the usual milliseconds.
+graphx.removeInterface('my-text', 0.2)
 ```
