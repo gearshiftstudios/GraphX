@@ -6,5 +6,5 @@ A library that makes DOM commands simpler. It allows you to create special anima
 You can import the GraphX library by importing the source into your HTML file (below is the latest release).
 
 ```html
-<script src='https://raw.githubusercontent.com/gearshiftstudios/GraphX/main/releases/stable/graphx%400.0.1.js'/>
+<script src='https://gearshiftstudios.github.io/GraphX/releases/stable/graphx@0.0.1.js'></script>
 ```
