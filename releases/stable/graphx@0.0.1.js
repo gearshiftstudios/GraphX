@@ -73,6 +73,9 @@ class GraphX {
 	setTextColor(element, color) {
 		document.getElementById(element).style.color = color
 	}
+	setBackgroundSize(element, size) {
+		document.getElementById(element).style.backgroundSize = size
+	}
 	setBackgroundColor(element, color) {
 		document.getElementById(element).style.backgroundColor = color
 	}
