@@ -3,6 +3,8 @@ class UNITS {
         constructor() {
                 this.percent = '%'
                 this.pixel = 'px'
+		this.vpWidth = 'vw'
+		this.vpHeight = 'vh'
         }
 }
 const Units = new UNITS()
@@ -53,8 +55,8 @@ class GraphX {
 	setPointerEvents(element, event) {
 		document.getElementById(element).style.pointerEvents = event
 	}
-	setRoundness(element, roundness) {
-		document.getElementById(element).style.borderRadius = roundness + 'px'
+	setRoundness(element, roundness, unit) {
+		document.getElementById(element).style.borderRadius = roundness + unit
 	}
 	setText(element, string) {
 		document.getElementById(element).innerHTML = string
