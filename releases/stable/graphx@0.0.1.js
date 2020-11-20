@@ -80,7 +80,7 @@ class GraphX {
 		document.getElementById(element).style.backgroundColor = color
 	}
 	setBackground(element, background) {
-		document.getElementById(element).style.backgroundColor = background
+		document.getElementById(element).style.background = background
 	}
 	setFill(element, fill) {
 		document.getElementById(element).style.fill = fill
