@@ -79,6 +79,9 @@ class GraphX {
 	setBackgroundColor(element, color) {
 		document.getElementById(element).style.backgroundColor = color
 	}
+	setBackground(element, background) {
+		document.getElementById(element).style.backgroundColor = background
+	}
 	setFill(element, fill) {
 		document.getElementById(element).style.fill = fill
 	}
