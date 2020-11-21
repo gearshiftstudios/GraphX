@@ -46,10 +46,16 @@ graphx.addElement([parent element], [element's type], [element's content])
 ```
 Here is how to use it
 
+```HTML
+<!-- This is the HTML before 'addElement' is used -->
+<div id='my-div'></div>
+```
+
 ```javascript
 const myDiv = document.getElementById('my-div')
 
 // elex is a part of the library that consists of different element types (HTML variables)
 // in this case we are creating a new div with text saying 'New Div!'
-graphx.addElement(myDiv, elex.sex, 'New Div!')
+graphx.addElement(myDiv, elex.div, 'New Div!')
 ```
+Once ran, the HTML would look like this
