@@ -37,7 +37,13 @@ Here is some basic and advanced things that this library can do.
 
 **Adding an Element**
 
-Like using ```innerHTML += [new stuff]``` as the simplest way for adding new elements, ```addElement``` will allow you to add elements with a preset parent element type (HTML variable) or a custom one like ```x-foo``` that u might have a style template for in a CSS file you have previously made.
+Like using ```innerHTML += [new stuff]``` as the simplest way for adding new elements, ```addElement``` will allow you to add elements with a preset parent/child element type (HTML variable) or a custom one like ```x-foo``` that u might have a style template for in a CSS file you have previously made.
+
+Here is the format
+
+```javascript
+graphx.addElement([the parent element], [element type], [element's content])
+```
 
 ```javascript
 const myDiv = document.getElementById('my-div')
