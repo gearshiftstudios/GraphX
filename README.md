@@ -42,8 +42,9 @@ Like using ```innerHTML += [new stuff]``` as the simplest way for adding new ele
 Here is the format
 
 ```javascript
-graphx.addElement([the parent element], [element type], [element's content])
+graphx.addElement([parent element], [element's type], [element's content])
 ```
+Here is how to use it
 
 ```javascript
 const myDiv = document.getElementById('my-div')
