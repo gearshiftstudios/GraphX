@@ -72,7 +72,7 @@ Once ran, the HTML would look like this
 Another way of adding child content to your new element is by simply adding HTML in the content parameter
 
 ```javascript
-graphx.addElement(myDiv, elex.div, 'new-div-id', 'new-div-class', `<div id='new-div-child'>Child of "${document.getElementById('new-div-id').id}" with and ID of "${this.id}".</div>`)
+graphx.addElement(myDiv, elex.div, 'new-div-id', 'new-div-class', `<p id='new-div-child'>Child of "${document.getElementById('new-div-id').id}" with and ID of "${this.id}".</p>`)
 ```
 
 And now the HTML should look like this
@@ -81,7 +81,7 @@ And now the HTML should look like this
 <!-- This is after 'addElement' is used -->
 <div id='my-div'>
   <div id='new-div-id' class='new-div-class'>
-    <div id='new-div-child'>Child of "new-div-id" with and ID of "new-div-child"</div>
+    <p id='new-div-child'>Child of "new-div-id" with and ID of "new-div-child"</p>
   </div>
 </div>
 ```
