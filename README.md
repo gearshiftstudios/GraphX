@@ -54,9 +54,11 @@ Here is how to use it
 ```javascript
 const myDiv = document.getElementById('my-div')
 
-// elex is a part of the library that consists of different element types (HTML variables)
+// elex is a part of the library that consists of different element types (HTML variables) and character types
 // in this case we are creating a new div with text saying 'New Element!'
 graphx.addElement(myDiv, elex.div, 'new-div-id', 'new-div-class', 'New Element!')
+
+// if you prefer to not add an ID, class, or content, replace the parameter with elex.chars.blank
 ```
 Once ran, the HTML would look like this
 
@@ -64,5 +66,22 @@ Once ran, the HTML would look like this
 <!-- This is after 'addElement' is used -->
 <div id='my-div'>
   <div id='new-div-id' class='new-div-class'>New Element!</div>
+</div>
+```
+
+Another way of adding child content to your new element is by simply adding HTML in the content parameter
+
+```javascript
+graphx.addElement(myDiv, elex.div, 'new-div-id', 'new-div-class', `<div id='new-div-child'>Child of "${document.getElementById('new-div-id').id}" with and ID of "${this.id}".</div>`)
+```
+
+And now the HTML should look like this
+
+```HTML
+<!-- This is after 'addElement' is used -->
+<div id='my-div'>
+  <div id='new-div-id' class='new-div-class'>
+    <div id='new-div-child'>Child of "new-div-id" with and ID of "new-div-child"</div>
+  </div>
 </div>
 ```
