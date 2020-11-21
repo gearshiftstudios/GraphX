@@ -30,3 +30,19 @@ graphx.setColor('my-text', 'white')
 // the unit for time is seconds, not the usual milliseconds.
 graphx.removeInterface('my-text', 0.2)
 ```
+
+## Syntax
+
+Here is some basic and advanced things that this library can do.
+
+**Adding an Element**
+
+Like using ```innerHTML += [new stuff]``` as the simplest way for adding new elements, ```addElement``` will allow you to add elements with a preset parent element type (HTML variable) or a custom one like ```x-foo``` that u might have a style template for in a CSS file you have previously made.
+
+```javascript
+const myDiv = document.getElementById('my-div')
+
+// elex is a part of the library that consists of different element types (HTML variables)
+// in this case we are creating a new div with text saying 'New Div!'
+graphx.addElement(myDiv, elex.div, 'New Div!')
+```
