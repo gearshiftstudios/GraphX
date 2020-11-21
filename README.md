@@ -15,13 +15,13 @@ You can import an older version by changing the numbers after the `@` in the URL
 
 Here is an example of how you could use the GraphX library.
 
-**HTML**
+### HTML
 
 ```html
 <div id='my-text'>This is some text!</div>
 ```
 
-**JavaScript**
+### JavaScript
 
 ```javascript
 // changes color of text.
