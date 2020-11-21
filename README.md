@@ -35,7 +35,7 @@ graphx.removeInterface('my-text', 0.2)
 
 Here is some basic and advanced things that this library can do.
 
-**Adding an Element**
+**Adding an element**
 
 Like using ```innerHTML += [new stuff]``` as the simplest way for adding new elements, ```addElement``` will allow you to add elements with a preset parent/child element type (HTML variable) or a custom one like ```x-foo``` that u might have a style template for in a CSS file you have previously made.
 
@@ -84,4 +84,14 @@ And now the HTML should look like this
     <p id='new-div-child'>Child of "new-div-id" with and ID of "new-div-child"</p>
   </div>
 </div>
+```
+
+**Changing text**
+
+It's essentially the same is using `innerHTML = [text]` but shorter (like most of the library's syntax). `setText` can accomplish this.
+
+```javascript
+const myText = document.getElementById('my-text')
+
+graphx.setText(myText, 'Here is some text.')
 ```
