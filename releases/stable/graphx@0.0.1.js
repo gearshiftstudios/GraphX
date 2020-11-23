@@ -85,6 +85,9 @@ class GraphX {
 	setFill(element, fill) {
 		document.getElementById(element).style.fill = fill
 	}
+	setFilter(element, filter) {
+		document.getElementById(element).style.filter = filter
+	}
 	setStroke(element, stroke) {
 		document.getElementById(element).style.stroke = stroke
 	}
