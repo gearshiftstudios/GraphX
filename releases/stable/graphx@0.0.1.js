@@ -49,6 +49,12 @@ class GraphX {
 	setHeight(element, size, unit) {
 		document.getElementById(element).style.height = size + unit
 	}
+	setMarginLeft(element, margin, unit) {
+		document.getElementById(element).style.marginLeft = margin + unit
+	}
+	setMarginTop(element, margin, unit) {
+		document.getElementById(element).style.marginTop = margin + unit
+	}
 	setTransform(element, transform) {
 		document.getElementById(element).style.transform = transform
 	}
